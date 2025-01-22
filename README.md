@@ -50,42 +50,17 @@ The first 5 test cases from the automation exercise:
 - **src/test/resources**: Contains external test data files allure-properties to specify allure reports path
   - **test-data**: External files used for data-driven testing. Sign-in.csv, signup.csv, signin-invaliddata.csv
   - **testng.xml**: TestNG configuration file for defining test execution.
+  - **POM.xml** : contains project configrations
 
-- **target**: Folder where the Allure report and other build artifacts will be stored.
 
 ### Framework Design:
 
-- **Page Object Model (POM)**: This design pattern will be implemented for maintaining separation of concerns between test scripts and UI elements. Each page of the application will have its own class that holds the web elements and methods to interact with them.
+- **Page Object Model (POM)**: This design pattern was implemented for maintaining separation of concerns between test scripts and UI elements. Each page of the application will have its own class that holds the web elements and methods to interact with them.
   
-- **Data-Driven Testing**: External files like **CSV**, **JSON**, or **Excel** will be used for data-driven testing to avoid hard-coding test data. This allows running tests with multiple datasets and configurations.
+- **Data-Driven Testing**: External files like **CSV** were used for data-driven testing to avoid hard-coding test data. This allows running tests with multiple datasets and configurations.
 
-- **Configurations**: URLs, environment details, and browser settings will be stored in configuration files to keep the code flexible and easily maintainable.
 
-- **Test Reporting**: **Allure Reporting** will be used to generate detailed test execution reports, including passed and failed test cases.
-
-### Notes:
-- Ensure that the framework remains stable after updates and code changes.
-- Handle test data properly to allow test execution without manual intervention.
-- Follow Java naming conventions and SOLID principles for writing clean and maintainable code.
-- **Parallel Execution**: Tests will be executed in parallel to save time and improve efficiency.
-
-## 5. CI/CD Implementation with GitHub Actions
-
-The project implements **Continuous Integration (CI)** and **Continuous Deployment (CD)** using GitHub Actions.
-
-- **CI**: GitHub Actions will automatically build, test, and validate changes made to the project. It will also run tests in parallel to reduce build times.
-- **CD**: Optionally, deployment steps can be added (e.g., deploying to a staging or production environment after a successful test run).
-
-Allure reports will be uploaded as an artifact in the GitHub Actions workflow, and screenshots of successful and failed tests will be included for reference.
-
-## 6. Deliverables
-
-- **GitHub Repository Link**: The project code is hosted on GitHub, including the automation test scripts and configurations.
-- **README file**: This file explaining the folder structure, tools used, configurations, and important notes.
-- **Demo Video**: A video demonstrating the execution of the test cases.
-- **CI/CD Results Report**: If CI/CD is implemented using GitHub Actions, the results will be available with Allure Report as an artifact, including screenshots of both successful and failed tests.
-
-## 7. How to Run the Project Locally
+## . How to Run the Project Locally
 
 ### Prerequisites:
 - Java 11 or higher
@@ -93,9 +68,4 @@ Allure reports will be uploaded as an artifact in the GitHub Actions workflow, a
 - IDE (e.g., IntelliJ IDEA, Eclipse)
 - Allure Commandline for generating test reports (optional)
 
-### Steps:
 
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/your-username/GraduationProject.git
