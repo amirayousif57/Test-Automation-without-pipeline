@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Regression Suite" parallel="tests" thread-count="2">
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+    <test name="GUI Test" >
+        <classes>
+
+            <class name="GUI.Test.LoginTest"/>
+            <class name="GUI.Test.RegstrationTest"/>
+        </classes>
+    </test>
+    <test name="API Test">
+        <classes>
+            <class name="API.Test.LoginApiTest"/>
+            <class name="API.Test.RegstrationAPITest"/>
+
+        </classes>
+    </test>
+</suite>
