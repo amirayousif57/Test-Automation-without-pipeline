@@ -35,7 +35,7 @@ The first 5 test cases from the automation exercise:
   -             HomePage class which conain locators and functions to intract wwith home page in GUI
   -             LoginPage class which conain locators and functions to intract wwith loginpage in GUI
 
--**sts/java**: Contains the test cases written for the automation.
+- **src/tests/java**: Contains the test cases written for the automation.
   -   API.test Package
   -             LoginAPITest contains test cases related to login // Test Case 2: Login User with correct email and password -
                                                                   //Test Case 3: Login User with incorrect email and password
