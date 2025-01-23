@@ -29,12 +29,12 @@ The first 5 test cases from the automation exercise:
 ### Folder Structure:
 
 - **src/main/java**: Contains the main test implementation.
-  - ****pages**: Contains the page objects for the Page Object Model (POM).
+  - pages package: Contains the page objects for the Page Object Model (POM).
   -   In the `pages` directory, we follow the POM principle by creating an interface-like class for each page that holds the **locators** for the elements. These files encapsulate the logic to find the web elements and provide methods for interacting with them.locators to perform the required actions on the page.
   -             CSVLoader class contains functions to read test data from a csv and pass it as a list
   -             HomePage class which conain locators and functions to intract wwith home page in GUI
   -             LoginPage class which conain locators and functions to intract wwith loginpage in GUI
-  - ****tests**: Contains the test cases written for the automation.
+  - **- **src/tests/java**: Contains the test cases written for the automation.
   -   API.test Package
   -             LoginAPITest contains test cases related to login // Test Case 2: Login User with correct email and password -
                                                                   //Test Case 3: Login User with incorrect email and password
