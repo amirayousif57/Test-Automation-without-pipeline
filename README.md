@@ -65,7 +65,7 @@ The first 5 test cases from the automation exercise:
 ### Prerequisites:
 - Java 11 or higher
 - Maven
-- IDE (e.g., IntelliJ IDEA, Eclipse)
-- Allure Commandline for generating test reports (optional)
+- IDE (e.g., IntelliJ IDEA)
+- Allure Commandline for generating test reports 
 
 
